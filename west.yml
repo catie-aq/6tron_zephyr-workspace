@@ -1,0 +1,45 @@
+# Copyright (c) 2023 CATIE
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: catie-6tron
+      url-base: https://github.com/catie-aq
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v3.4.0
+      import:
+        name-blocklist:
+          - hal_altera
+          - hal_ambiq
+          - hal_atmel
+          - hal_espressif
+          - hal_ethos_u
+          - hal_gigadevice
+          - hal_infineon
+          - hal_intel
+          - hal_microchip
+          - hal_nuvoton
+          - hal_nxp
+          - hal_openisa
+          - hal_quicklogic
+          - hal_renesas
+          - hal_rpi_pico
+          - hal_silabs
+          - hal_st
+          - hal_telink
+          - hal_ti
+          - hal_wurthelektronik
+          - hal_xtensa
+    - name: zephyr_zest-sensor-imu
+      remote: catie-6tron
+      revision: master
+      path: 6tron/zest-sensor-imu
+    - name: zephyr_zest-core-stm32l4a6rg
+      remote: catie-6tron
+      revision: 2-package-as-zephyr-module
+      path: 6tron/zest-core-stm32l4a6rg
