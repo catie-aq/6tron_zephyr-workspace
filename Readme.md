@@ -3,7 +3,7 @@
 ## Usage
 - Initialize the Zephyr workspace
 ```bash
-west init -m https://github.com/catie-aq/zephyr_manifest.git zephyr_6tron_workspace
+west init -m https://github.com/catie-aq/zephyr_manifest zephyr_6tron_workspace
 ```
 
 - Update the Zephyr workspace
