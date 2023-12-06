@@ -38,3 +38,4 @@ manifest:
     - name: zephyr_6tron-project
       remote: catie-6tron
       revision: master
+      import: true
