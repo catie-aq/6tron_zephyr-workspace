@@ -38,9 +38,9 @@ manifest:
           - hal_ti
           - hal_wurthelektronik
           - hal_xtensa
-    - name: 6tron-manifest
+    - name: 6tron_manifest
       remote: catie-6tron
       repo-path: zephyr_6tron-manifest
       revision: v3.7.0+202408
-      path: 6tron/6tron-manifest
+      path: 6tron/6tron_manifest
       import: true
