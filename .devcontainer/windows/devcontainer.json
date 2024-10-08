@@ -1,0 +1,13 @@
+{
+	"name": "6TRON Zephyr",
+	"image": "ghcr.io/catie-aq/zephyr_docker:v4.1.0-202505-dev",
+
+	"features": {
+		"ghcr.io/devcontainers-extra/features/pre-commit:2": {}
+	},
+
+	"runArgs": ["--privileged"],
+
+	"workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspace,type=bind",
+	"workspaceFolder": "/workspace"
+}
