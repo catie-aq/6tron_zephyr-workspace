@@ -1,0 +1,16 @@
+{
+	"name": "6TRON Zephyr Workspace",
+	"image": "ghcr.io/catie-aq/zephyr_docker:v0.26.14",
+
+	"features": {
+        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+	},
+
+	"runArgs": ["--privileged"],
+	"mounts": [
+		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind"
+	],
+
+    "workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspace,type=bind",
+    "workspaceFolder": "/workspace"
+}
